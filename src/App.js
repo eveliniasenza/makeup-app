@@ -1,15 +1,15 @@
-import './App.css';
+import React from "react";
+import {AppRouter} from "./Routes/routes";
 import NavBar from './components/NavBar'
-import React from 'react';
-import ItemContainer from './components/ItemContainer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <NavBar/>
-        <ItemContainer/>
-    </div>
+    <>   
+     <AppRouter />
+     <NavBar/>
+    </>
+      
   );
-}
+};
 
 export default App;

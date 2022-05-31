@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 
 const {makeUp} = require('../makeUp')
 
-function DetailItem() {
+function DetailItemContainer() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ function DetailItem() {
   );
 }
 
-export default DetailItem;
+export default DetailItemContainer;

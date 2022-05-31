@@ -4,7 +4,6 @@ import { CardActionArea} from '@mui/material';
 import React from "react";
 
   export const ItemDetail = ({list}) => {
-    console.log(list, 'sddsdsdsfdf')
   return (
       <>
         {list?.map((item) (
