@@ -9,8 +9,9 @@ function Item() {
 
   useEffect(() => {
       customFetch(2000, makeUp)
-      .then(result => setList(result))     
+      .then(result => setList(result.find(item => item.id === 1)))
       .catch(err => console.log(err));
+
   }, []);
    
   return (

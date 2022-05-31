@@ -3,10 +3,11 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea} from '@mui/material';
 import React from "react";
 
-  export const ItemDetail = (list) => {
+  export const ItemDetail = ({list}) => {
+    console.log(list, 'sddsdsdsfdf')
   return (
       <>
-        {list?.map((item[1]) (
+        {list?.map((item) (
   <Card sx={{ maxWidth: 345 , marginBottom: 10}}>
      <CardActionArea>
          <CardContent>
