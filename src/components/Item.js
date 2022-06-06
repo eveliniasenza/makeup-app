@@ -1,7 +1,6 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { CardActionArea} from '@mui/material';
-import Counter from "../components/Counter"
 import React, { useState, useEffect } from "react";
 import customFetch from '../utils/customFetch';
 
@@ -26,7 +25,6 @@ function Item() {
           <div key={item.id}>
             <h3>{item.name}</h3>
             <p>{item.shopId}</p>
-            <Counter/>
           </div>   
         </CardContent> 
     </CardActionArea>
