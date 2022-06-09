@@ -1,7 +1,24 @@
+import { createContext , useState} from "react";
 
-export const CartContext= ({ }) => {
+export const CartContext= createContext();
 
-  return 
+
+const CartContextProvider = ({children}) => {
+    const [cartList, setCartList] = useState([
+        {
+            "id": 3,
+            "name": "rubor",
+            "shopId": "MAC",
+            "imgUrl": ""
+        
+          }
+    ])
+    return(
+        <CartContext.Provider value={cartList}>
+        {children}
+        </CartContext.Provider>   
+    )
+ 
 }
 
-export default CartContext;
+export default CartContextProvider
